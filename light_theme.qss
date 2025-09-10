@@ -1,0 +1,361 @@
+/* ==========================================
+   LIGHT THEME - QT BUTTON STYLES
+   Based on Figma design
+   ========================================== */
+
+/* GENERAL SETTINGS */
+QWidget {
+    font-family: "Roboto", "Segoe UI", "Arial", sans-serif;
+    background-color: #ffffff;
+    color: #3f3f3f;
+}
+
+/* HEADERS AND LABELS */
+#titleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#statusLabel {
+    font-size: 14px;
+    color: #3f3f3f;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+/* GROUPS */
+QGroupBox {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    border: 2px solid #e2e2e2;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #fafafa;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 8px 0 8px;
+    background-color: #fafafa;
+}
+
+/* MAIN BUTTONS - BASE STYLE (PRECISE COLORS FROM FIGMA) */
+QPushButton {
+    background-color: #e2e2e2;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    color: #3f3f3f;
+    font-weight: normal;
+    /* padding, font-size и min-height задаются для каждого размера отдельно */
+}
+
+QPushButton:hover {
+    background-color: #dff4fa;
+    border: 1px solid #85cfeb;
+    color: #3f3f3f;
+}
+
+QPushButton:pressed {
+    background-color: #b1e2f2;
+    border: 1px solid #4faade;
+    color: #3f3f3f;
+}
+
+QPushButton:disabled {
+    background-color: #e2e2e2;
+    border: 1px solid #bbbbbb;
+    color: #bbbbbb;
+}
+
+/* DEMONSTRATION BUTTON STATES */
+#smallHoverButton, #mediumHoverButton, #largeHoverButton {
+    background-color: #dff4fa;
+    border: 1px solid #85cfeb;
+    color: #3f3f3f;
+}
+
+#smallPressedButton, #mediumPressedButton, #largePressedButton {
+    background-color: #b1e2f2;
+    border: 1px solid #4faade;
+    color: #3f3f3f;
+}
+
+#smallDisabledButton, #mediumDisabledButton, #largeDisabledButton {
+    background-color: #e2e2e2;
+    border: 1px solid #bbbbbb;
+    color: #bbbbbb;
+    font-style: italic;
+}
+
+/* BUTTON SIZES FROM FIGMA */
+#smallButton, #smallHoverButton, #smallPressedButton, #smallDisabledButton {
+    font-size: 12px;
+    padding: 0px 12px;
+    min-height: 24px;
+    max-height: 24px;
+    min-width: 80px;
+}
+
+#mediumButton, #mediumHoverButton, #mediumPressedButton, #mediumDisabledButton, #themeButton {
+    font-size: 14px;
+    padding: 0px 16px;
+    min-height: 32px;
+    max-height: 32px;
+    min-width: 100px;
+}
+
+#largeButton, #largeHoverButton, #largePressedButton, #largeDisabledButton {
+    font-size: 16px;
+    padding: 0px 20px;
+    min-height: 40px;
+    max-height: 40px;
+    min-width: 120px;
+}
+
+/* MAIN BUTTONS BY TYPES */
+#primaryButton {
+    background-color: #007bff;
+    border: 1px solid #0056b3;
+    color: white;
+    font-weight: 500;
+}
+
+#primaryButton:hover {
+    background-color: #0069d9;
+    border: 1px solid #0045a1;
+}
+
+#primaryButton:pressed {
+    background-color: #0056b3;
+    border: 1px solid #004085;
+}
+
+#secondaryButton {
+    background-color: #6c757d;
+    border: 1px solid #545b62;
+    color: white;
+}
+
+#secondaryButton:hover {
+    background-color: #5a6268;
+    border: 1px solid #494f54;
+}
+
+#secondaryButton:pressed {
+    background-color: #545b62;
+    border: 1px solid #3d4246;
+}
+
+#successButton {
+    background-color: #28a745;
+    border: 1px solid #1e7e34;
+    color: white;
+}
+
+#successButton:hover {
+    background-color: #218838;
+    border: 1px solid #1c7430;
+}
+
+#successButton:pressed {
+    background-color: #1e7e34;
+    border: 1px solid #155724;
+}
+
+#warningButton {
+    background-color: #ffc107;
+    border: 1px solid #e0a800;
+    color: #212529;
+}
+
+#warningButton:hover {
+    background-color: #e0a800;
+    border: 1px solid #d39e00;
+}
+
+#warningButton:pressed {
+    background-color: #d39e00;
+    border: 1px solid #b88300;
+}
+
+#dangerButton {
+    background-color: #dc3545;
+    border: 1px solid #bd2130;
+    color: white;
+}
+
+#dangerButton:hover {
+    background-color: #c82333;
+    border: 1px solid #a71e2a;
+}
+
+#dangerButton:pressed {
+    background-color: #bd2130;
+    border: 1px solid #971e26;
+}
+
+/* REMOVED - conflicted with rules above */
+
+/* BUTTON STATES */
+#normalButton {
+    background-color: #e2e2e2;
+    border: 1px solid #bbbbbb;
+}
+
+#hoverButton {
+    background-color: #dff4fa;
+    border: 1px solid #85cfeb;
+}
+
+#pressedButton {
+    background-color: #b1e2f2;
+    border: 1px solid #4faade;
+}
+
+#disabledButton {
+    background-color: #e2e2e2;
+    border: 1px solid #bbbbbb;
+    color: #bbbbbb;
+}
+
+/* BUTTONS WITH ICONS */
+#iconButton {
+    background-color: #e2e2e2;
+    border: 1px solid #bbbbbb;
+    text-align: left;
+}
+
+#iconButton:hover {
+    background-color: #dff4fa;
+    border: 1px solid #85cfeb;
+}
+
+#iconButton:pressed {
+    background-color: #b1e2f2;
+    border: 1px solid #4faade;
+}
+
+#iconButtonDanger {
+    background-color: #dc3545;
+    border: 1px solid #bd2130;
+    color: white;
+    text-align: left;
+}
+
+#iconButtonDanger:hover {
+    background-color: #c82333;
+    border: 1px solid #a71e2a;
+}
+
+#iconButtonDanger:pressed {
+    background-color: #bd2130;
+    border: 1px solid #971e26;
+}
+
+/* OUTLINE BUTTONS */
+#outlineButton {
+    background-color: transparent;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+}
+
+#outlineButton:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+#outlineButton:pressed {
+    background-color: #545b62;
+    border: 2px solid #545b62;
+}
+
+#outlineSuccessButton {
+    background-color: transparent;
+    border: 2px solid #28a745;
+    color: #28a745;
+}
+
+#outlineSuccessButton:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+#outlineSuccessButton:pressed {
+    background-color: #1e7e34;
+    border: 2px solid #1e7e34;
+}
+
+#outlineDangerButton {
+    background-color: transparent;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+
+#outlineDangerButton:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+#outlineDangerButton:pressed {
+    background-color: #bd2130;
+    border: 2px solid #bd2130;
+}
+
+/* THEME TOGGLE BUTTON */
+#themeButton {
+    background-color: #495057;
+    border: 1px solid #343a40;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+#themeButton:hover {
+    background-color: #6c757d;
+    border: 1px solid #495057;
+}
+
+#themeButton:pressed {
+    background-color: #343a40;
+    border: 1px solid #1d2124;
+}
+
+/* SPECIAL EFFECTS */
+QPushButton:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}
+
+QPushButton:default {
+    border: 2px solid #007bff;
+}
+
+/* ANIMATIONS AND TRANSITIONS (pseudo-effects via alternative colors) */
+QPushButton:checked {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #0056b3;
+}
+
+/* ADAPTIVITY */
+QPushButton[flat="true"] {
+    border: none;
+    background-color: transparent;
+}
+
+QPushButton[flat="true"]:hover {
+    background-color: #f8f9fa;
+}
+
+QPushButton[flat="true"]:pressed {
+    background-color: #e9ecef;
+}

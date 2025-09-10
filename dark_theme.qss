@@ -1,0 +1,416 @@
+/* ==========================================
+   DARK THEME - QT BUTTON STYLES
+   Based on Figma design
+   ========================================== */
+
+/* GENERAL SETTINGS (COLORS FROM DARK FIGMA FRAME) */
+QWidget {
+    font-family: "Roboto", "Segoe UI", "Arial", sans-serif;
+    background-color: #333538;
+    color: #e0e0e0;
+}
+
+/* HEADERS AND LABELS */
+#titleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#statusLabel {
+    font-size: 14px;
+    color: #e0e0e0;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border: 1px solid #4a4a4a;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+/* REMOVE BACKGROUND FROM LABELS */
+QLabel {
+    background-color: transparent;
+}
+
+/* GROUPS */
+QGroupBox {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #4a4a4a;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #232323;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 8px 0 8px;
+}
+
+/* MAIN BUTTONS - BASE STYLE (PRECISE COLORS FROM DARK FIGMA FRAME) */
+QPushButton {
+    background-color: #1e2023;
+    border: 1px solid #646464;
+    border-radius: 4px;
+    color: #e0e0e0;
+    font-weight: normal;
+    /* padding, font-size и min-height задаются для каждого размера отдельно */
+}
+
+QPushButton:hover {
+    background-color: #646464;
+    border: 1px solid #4faade;
+    color: #e0e0e0;
+}
+
+QPushButton:pressed {
+    background-color: #3a7fb1;
+    border: 1px solid #888888;
+    color: #e0e0e0;
+}
+
+QPushButton:disabled {
+    background-color: #4a4a4a;
+    border: 1px solid #4a4a4a;
+    color: #bbbbbb;
+}
+
+/* DEMONSTRATION BUTTON STATES (DARK THEME) */
+#smallHoverButton, #mediumHoverButton, #largeHoverButton {
+    background-color: #646464;
+    border: 1px solid #4faade;
+    color: #e0e0e0;
+}
+
+#smallPressedButton, #mediumPressedButton, #largePressedButton {
+    background-color: #3a7fb1;
+    border: 1px solid #888888;
+    color: #e0e0e0;
+}
+
+#smallDisabledButton, #mediumDisabledButton, #largeDisabledButton {
+    background-color: #4a4a4a;
+    border: 1px solid #4a4a4a;
+    color: #bbbbbb;
+    font-style: italic;
+}
+
+/* BUTTON SIZES FROM FIGMA (DARK THEME) */
+#smallButton, #smallHoverButton, #smallPressedButton, #smallDisabledButton {
+    font-size: 12px;
+    padding: 0px 12px;
+    min-height: 24px;
+    max-height: 24px;
+    min-width: 80px;
+}
+
+#mediumButton, #mediumHoverButton, #mediumPressedButton, #mediumDisabledButton, #themeButton {
+    font-size: 14px;
+    padding: 0px 16px;
+    min-height: 32px;
+    max-height: 32px;
+    min-width: 100px;
+}
+
+#largeButton, #largeHoverButton, #largePressedButton, #largeDisabledButton {
+    font-size: 16px;
+    padding: 0px 20px;
+    min-height: 40px;
+    max-height: 40px;
+    min-width: 120px;
+}
+
+/* MAIN BUTTONS BY TYPES (DARK VERSION) */
+#primaryButton {
+    background-color: #0d7377;
+    border: 1px solid #14a085;
+    color: white;
+    font-weight: 500;
+}
+
+#primaryButton:hover {
+    background-color: #14a085;
+    border: 1px solid #17c1a3;
+}
+
+#primaryButton:pressed {
+    background-color: #0a5d61;
+    border: 1px solid #0d7377;
+}
+
+#secondaryButton {
+    background-color: #4a4a4a;
+    border: 1px solid #666666;
+    color: #e0e0e0;
+}
+
+#secondaryButton:hover {
+    background-color: #5a5a5a;
+    border: 1px solid #777777;
+}
+
+#secondaryButton:pressed {
+    background-color: #3a3a3a;
+    border: 1px solid #555555;
+}
+
+#successButton {
+    background-color: #1f7a2e;
+    border: 1px solid #27ae60;
+    color: white;
+}
+
+#successButton:hover {
+    background-color: #27ae60;
+    border: 1px solid #2ecc71;
+}
+
+#successButton:pressed {
+    background-color: #196126;
+    border: 1px solid #1f7a2e;
+}
+
+#warningButton {
+    background-color: #b7750a;
+    border: 1px solid #f39c12;
+    color: white;
+}
+
+#warningButton:hover {
+    background-color: #f39c12;
+    border: 1px solid #e67e22;
+}
+
+#warningButton:pressed {
+    background-color: #9a6308;
+    border: 1px solid #b7750a;
+}
+
+#dangerButton {
+    background-color: #a93226;
+    border: 1px solid #e74c3c;
+    color: white;
+}
+
+#dangerButton:hover {
+    background-color: #e74c3c;
+    border: 1px solid #c0392b;
+}
+
+#dangerButton:pressed {
+    background-color: #8b2b1e;
+    border: 1px solid #a93226;
+}
+
+/* REMOVED - conflicted with rules above */
+
+/* BUTTON STATES (DARK VERSION) */
+#normalButton {
+    background-color: #3a3a3a;
+    border: 1px solid #555555;
+}
+
+#hoverButton {
+    background-color: #1a4a5c;
+    border: 1px solid #2980b9;
+}
+
+#pressedButton {
+    background-color: #154a65;
+    border: 1px solid #3498db;
+}
+
+#disabledButton {
+    background-color: #2a2a2a;
+    border: 1px solid #555555;
+    color: #666666;
+}
+
+/* BUTTONS WITH ICONS (DARK VERSION) */
+#iconButton {
+    background-color: #3a3a3a;
+    border: 1px solid #555555;
+    text-align: left;
+}
+
+#iconButton:hover {
+    background-color: #1a4a5c;
+    border: 1px solid #2980b9;
+}
+
+#iconButton:pressed {
+    background-color: #154a65;
+    border: 1px solid #3498db;
+}
+
+#iconButtonDanger {
+    background-color: #a93226;
+    border: 1px solid #e74c3c;
+    color: white;
+    text-align: left;
+}
+
+#iconButtonDanger:hover {
+    background-color: #e74c3c;
+    border: 1px solid #c0392b;
+}
+
+#iconButtonDanger:pressed {
+    background-color: #8b2b1e;
+    border: 1px solid #a93226;
+}
+
+/* OUTLINE BUTTONS (DARK VERSION) */
+#outlineButton {
+    background-color: transparent;
+    border: 2px solid #666666;
+    color: #e0e0e0;
+}
+
+#outlineButton:hover {
+    background-color: #666666;
+    color: white;
+}
+
+#outlineButton:pressed {
+    background-color: #555555;
+    border: 2px solid #555555;
+}
+
+#outlineSuccessButton {
+    background-color: transparent;
+    border: 2px solid #27ae60;
+    color: #27ae60;
+}
+
+#outlineSuccessButton:hover {
+    background-color: #27ae60;
+    color: white;
+}
+
+#outlineSuccessButton:pressed {
+    background-color: #1f7a2e;
+    border: 2px solid #1f7a2e;
+}
+
+#outlineDangerButton {
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+}
+
+#outlineDangerButton:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#outlineDangerButton:pressed {
+    background-color: #a93226;
+    border: 2px solid #a93226;
+}
+
+/* THEME TOGGLE BUTTON (DARK VERSION) */
+#themeButton {
+    background-color: #495057;
+    border: 1px solid #343a40;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+#themeButton:hover {
+    background-color: #6c757d;
+    border: 1px solid #495057;
+}
+
+#themeButton:pressed {
+    background-color: #343a40;
+    border: 1px solid #1d2124;
+}
+
+/* SPECIAL EFFECTS (DARK VERSION) */
+QPushButton:focus {
+    outline: none;
+    border: 2px solid #3498db;
+}
+
+QPushButton:default {
+    border: 2px solid #3498db;
+}
+
+/* ANIMATIONS AND TRANSITIONS (DARK VERSION) */
+QPushButton:checked {
+    background-color: #3498db;
+    color: white;
+    border: 1px solid #2980b9;
+}
+
+/* ADAPTIVITY (DARK VERSION) */
+QPushButton[flat="true"] {
+    border: none;
+    background-color: transparent;
+}
+
+QPushButton[flat="true"]:hover {
+    background-color: #2a2a2a;
+}
+
+QPushButton[flat="true"]:pressed {
+    background-color: #3a3a3a;
+}
+
+/* ADDITIONAL STYLES FOR DARK THEME */
+QScrollBar:vertical {
+    background-color: #2a2a2a;
+    width: 15px;
+    margin: 15px 3px 15px 3px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #555555;
+    min-height: 5px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #666666;
+}
+
+QScrollBar::handle:vertical:pressed {
+    background-color: #777777;
+}
+
+/* MENUS AND COMBO BOXES */
+QComboBox {
+    background-color: #3a3a3a;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    color: #e0e0e0;
+    padding: 6px;
+}
+
+QComboBox:hover {
+    border: 1px solid #2980b9;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #555555;
+    border-left-style: solid;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2a2a2a;
+    border: 1px solid #555555;
+    selection-background-color: #3498db;
+}
